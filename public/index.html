@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>JKJ SYSTEMS — Páginas web y chatbots con IA para negocios</title>
+<meta name="description" content="JKJ SYSTEMS hace páginas web para negocios y chatbots con IA para su WhatsApp. Cada proyecto se cotiza a la medida y la cotización no cuesta.">
+<meta name="theme-color" content="#0D1215">
+<meta name="color-scheme" content="dark">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:type" content="website">
+<meta property="og:title" content="JKJ SYSTEMS — Páginas web y chatbots con IA para negocios">
+<meta property="og:description" content="Páginas web para negocios y chatbots con IA para WhatsApp. Cotización sin costo.">
+<meta property="og:locale" content="es_MX">
+<meta property="og:url" content="https://jkjsystems.com.mx/">
+<meta property="og:site_name" content="JKJ SYSTEMS">
+<link rel="canonical" href="https://jkjsystems.com.mx/">
+<!--
+  Seguridad: la política CSP y las demás cabeceras se envían desde el hosting
+  (vercel.json y _headers). Si tu hosting no permite cabeceras, puedes activar
+  esta versión en <meta> (no cubre frame-ancestors):
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'">
+-->
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preload" href="assets/fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<canvas id="net" class="net" aria-hidden="true"></canvas>
+
+<header class="header" id="header">
+  <div class="wrap header__in">
+    <a class="brand" href="#inicio" aria-label="JKJ SYSTEMS, inicio">
+      <img class="brand__mark" src="assets/img/logo-emblem-nav.webp" alt="" width="160" height="95">
+      <span class="brand__name">JKJ SYSTEMS</span>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">
+      <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      <span class="sr-only">Abrir menú</span>
+    </button>
+    <nav class="nav" id="nav" aria-label="Principal">
+      <a class="nav__link" href="#servicios">Servicios</a>
+      <a class="nav__link" href="#como-trabajamos">Cómo trabajamos</a>
+      <a class="nav__link" href="#proyectos">Proyectos</a>
+      <a class="btn btn--primary btn--sm" href="#contacto">Cotización sin costo</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+
+  <section class="section hero" id="inicio">
+    <div class="wrap hero__in">
+      <div class="hero__copy tilt" data-tilt="3">
+        <h1 class="hero__title d-40">Tu negocio, con página web y un WhatsApp que responde solo.</h1>
+        <p class="hero__lead d-20">En JKJ SYSTEMS hacemos páginas web para negocios y chatbots con IA para su WhatsApp. Cada proyecto se cotiza a la medida, y la cotización no cuesta.</p>
+        <div class="hero__actions d-56">
+          <a class="btn btn--primary btn--lg" href="#contacto">Pedir mi cotización sin costo
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"></path></svg>
+          </a>
+          <a class="link" href="#servicios">Ver qué hacemos</a>
+        </div>
+      </div>
+
+      <div class="hero__logo">
+        <div class="logo-glow" aria-hidden="true"></div>
+        <div class="logo-stage" data-logo role="img" aria-label="Logotipo de JKJ SYSTEMS en 3D: un ojo con circuitos sobre el nombre de la empresa">
+          <canvas class="logo-canvas" aria-hidden="true"></canvas>
+          <img class="logo-fallback logo-fallback--emblem" src="assets/img/logo-emblem.webp" alt="" width="1100" height="655" decoding="async">
+          <img class="logo-fallback logo-fallback--word" src="assets/img/logo-wordmark.webp" alt="" width="908" height="470" decoding="async">
+          <img class="logo-fallback logo-fallback--tag" src="assets/img/logo-tagline.webp" alt="" width="908" height="57" decoding="async">
+        </div>
+        <div class="logo-shadow" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--a" id="servicios">
+    <div class="wrap">
+      <div class="section__head tilt" data-tilt="2.5">
+        <h2 class="h2 d-30">Lo que hacemos por tu negocio</h2>
+        <p class="lead d-14">Dos servicios que se pueden contratar juntos o por separado.</p>
+      </div>
+      <div class="grid grid--2">
+
+        <article class="card card--service tilt" data-tilt="7">
+          <div class="glare" aria-hidden="true"></div>
+          <h3 class="h3 d-26">Páginas web para negocios</h3>
+          <p class="card__text d-14">Tu página se arma según tu giro y lo que quieras incluir: menú, catálogo, citas, ubicación. Lo que tu cliente busca antes de escribirte.</p>
+          <div class="card__demo">
+            <div class="browser d-48" aria-hidden="true">
+              <div class="browser__bar">
+                <span class="browser__dot"></span><span class="browser__dot"></span><span class="browser__dot"></span>
+                <span class="browser__url">tunegocio.com.mx</span>
+              </div>
+              <div class="browser__body">
+                <div class="browser__nav"><strong>Tu negocio</strong><span>Menú · Horarios · Ubicación</span></div>
+                <p class="browser__title d-24">Abierto hoy hasta las 9 pm. Aparta tu mesa.</p>
+                <div class="browser__btns d-40">
+                  <span class="pill pill--green">Reservar</span>
+                  <span class="pill pill--ghost">Ver menú</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card--service card--accent tilt" data-tilt="7">
+          <div class="glare" aria-hidden="true"></div>
+          <h3 class="h3 d-26">Chatbots con IA para tu WhatsApp</h3>
+          <p class="card__text d-14">Un asistente que contesta en el WhatsApp de tu negocio las preguntas de siempre: horarios, precios, disponibilidad. Tus clientes tienen respuesta aunque estés ocupado.</p>
+          <div class="card__demo">
+            <div class="convo d-34" data-convo aria-hidden="true">
+              <span class="convo__label">Ejemplo de conversación</span>
+              <div class="msg msg--in d-14">Hola, ¿a qué hora cierran hoy?</div>
+              <div class="msg msg--out d-28">¡Hola! Hoy cerramos a las 9 pm. ¿Te aparto una mesa?</div>
+              <div class="msg msg--in d-42">Sí, para 4 personas a las 7.</div>
+              <div class="msg msg--out d-56">Listo: mesa para 4 a las 7 pm. ¡Te esperamos!</div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--b" id="como-trabajamos">
+    <div class="wrap">
+      <div class="section__head tilt" data-tilt="2.5">
+        <h2 class="h2 h2--narrow d-30">Sin paquetes: cotizamos lo que tu negocio necesita.</h2>
+        <p class="lead lead--wide d-14">Un restaurante no necesita lo mismo que un consultorio o un taller. Por eso no vendemos planes fijos.</p>
+      </div>
+      <ol class="grid grid--3 steps">
+        <li class="card card--step tilt" data-tilt="10">
+          <div class="glare" aria-hidden="true"></div>
+          <div class="num3d d-46" data-num="1" aria-hidden="true">1</div>
+          <h3 class="h4 d-24"><span class="sr-only">Paso 1: </span>Nos cuentas de tu negocio</h3>
+          <p class="card__text card__text--sm d-12">A qué te dedicas, qué quieres que haga tu página o tu chatbot y qué tienes ya.</p>
+        </li>
+        <li class="card card--step tilt" data-tilt="10">
+          <div class="glare" aria-hidden="true"></div>
+          <div class="num3d d-46" data-num="2" aria-hidden="true">2</div>
+          <h3 class="h4 d-24"><span class="sr-only">Paso 2: </span>Te mandamos tu cotización</h3>
+          <p class="card__text card__text--sm d-12">Con lo que incluye y cuánto cuesta. No tiene costo y pedirla no te compromete a nada.</p>
+        </li>
+        <li class="card card--step tilt" data-tilt="10">
+          <div class="glare" aria-hidden="true"></div>
+          <div class="num3d d-46" data-num="3" aria-hidden="true">3</div>
+          <h3 class="h4 d-24"><span class="sr-only">Paso 3: </span>Lo construimos y lo revisas</h3>
+          <p class="card__text card__text--sm d-12">Te mostramos avances, ajustamos contigo y publicamos cuando lo apruebes.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section--a" id="proyectos">
+    <div class="wrap">
+      <div class="section__head tilt" data-tilt="2.5">
+        <h2 class="h2 d-30">Proyectos de muestra</h2>
+        <p class="lead d-14">Diseños de ejemplo para distintos giros, para que veas cómo podría quedar el tuyo.</p>
+      </div>
+      <div class="grid grid--3 demos">
+
+        <article class="demo">
+          <div class="demo__shot demo__shot--resto tilt" data-tilt="14" aria-hidden="true">
+            <div class="glare"></div>
+            <div class="demo__in">
+              <div class="demo__top d-16"><strong>Sabor de casa</strong><span>Menú · Reservas</span></div>
+              <div class="demo__row">
+                <div class="d-34">
+                  <p class="demo__title">Cocina de la casa, mesa para todos.</p>
+                  <span class="demo__btn demo__btn--resto">Reservar mesa</span>
+                </div>
+                <span class="demo__plate d-62"></span>
+              </div>
+            </div>
+          </div>
+          <h3 class="demo__name">Restaurante</h3>
+          <p class="demo__meta">Proyecto demo · Menú, reservas por WhatsApp y ubicación.</p>
+        </article>
+
+        <article class="demo">
+          <div class="demo__shot demo__shot--clinic tilt" data-tilt="14" aria-hidden="true">
+            <div class="glare"></div>
+            <div class="demo__in">
+              <div class="demo__top d-16"><strong>Consultorio Vida</strong><span>Servicios · Contacto</span></div>
+              <div class="demo__block">
+                <p class="demo__title d-30">Agenda tu cita sin llamar.</p>
+                <div class="slots">
+                  <span class="slot d-22">9:00</span>
+                  <span class="slot d-30">10:30</span>
+                  <span class="slot slot--on d-58">12:00</span>
+                  <span class="slot d-30">16:00</span>
+                  <span class="slot d-22">17:30</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3 class="demo__name">Consultorio</h3>
+          <p class="demo__meta">Proyecto demo · Citas, servicios y recordatorios por WhatsApp.</p>
+        </article>
+
+        <article class="demo">
+          <div class="demo__shot demo__shot--shop tilt" data-tilt="14" aria-hidden="true">
+            <div class="glare"></div>
+            <div class="demo__in demo__in--gap">
+              <div class="demo__top d-16"><strong>La Esquina</strong><span>Catálogo · Pedidos</span></div>
+              <div class="goods">
+                <div class="good d-26"><div class="good__img good__img--a"></div><div class="good__bar good__bar--a"></div></div>
+                <div class="good d-46"><div class="good__img good__img--b"></div><div class="good__bar good__bar--b"></div></div>
+                <div class="good d-26"><div class="good__img good__img--c"></div><div class="good__bar good__bar--c"></div></div>
+              </div>
+              <span class="demo__btn demo__btn--shop d-54">Pedir por WhatsApp</span>
+            </div>
+          </div>
+          <h3 class="demo__name">Tienda local</h3>
+          <p class="demo__meta">Proyecto demo · Catálogo de productos y pedidos por WhatsApp.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--c" id="contacto">
+    <div class="wrap contact">
+      <div class="contact__col">
+        <div class="tilt" data-tilt="3">
+          <h2 class="h2 h2--xl d-40">Cuéntanos qué necesita tu negocio.</h2>
+          <p class="lead lead--narrow d-18">Escríbenos por el medio que prefieras y te mandamos tu cotización sin costo.</p>
+        </div>
+        <div class="rows">
+          <a class="row tilt" data-tilt="7" data-contact="email" href="#cotizacion">
+            <div class="glare" aria-hidden="true"></div>
+            <span class="row__txt d-22"><span class="row__label">Correo</span><span class="row__value" data-contact-value>[TU CORREO]</span></span>
+            <svg class="row__arrow d-38" width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"></path></svg>
+          </a>
+          <a class="row tilt" data-tilt="7" data-contact="instagram" href="#cotizacion">
+            <div class="glare" aria-hidden="true"></div>
+            <span class="row__txt d-22"><span class="row__label">Instagram</span><span class="row__value" data-contact-value>[@TU_USUARIO]</span></span>
+            <svg class="row__arrow d-38" width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"></path></svg>
+          </a>
+          <a class="row tilt" data-tilt="7" data-contact="facebook" href="#cotizacion">
+            <div class="glare" aria-hidden="true"></div>
+            <span class="row__txt d-22"><span class="row__label">Facebook</span><span class="row__value" data-contact-value>[TU PÁGINA DE FACEBOOK]</span></span>
+            <svg class="row__arrow d-38" width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <form class="quote card" id="cotizacion" novalidate autocomplete="on">
+        <h3 class="h3">Pide tu cotización</h3>
+        <p class="quote__hint">Llena estos datos y te escribimos. Los campos con * son obligatorios.</p>
+
+        <div class="field">
+          <label class="field__label" for="q-nombre">Tu nombre *</label>
+          <input class="field__input" id="q-nombre" name="nombre" type="text" autocomplete="name" maxlength="80" required aria-describedby="q-nombre-err">
+          <p class="field__err" id="q-nombre-err" hidden></p>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label class="field__label" for="q-correo">Correo *</label>
+            <input class="field__input" id="q-correo" name="correo" type="email" inputmode="email" autocomplete="email" autocapitalize="none" spellcheck="false" maxlength="120" required aria-describedby="q-correo-err">
+            <p class="field__err" id="q-correo-err" hidden></p>
+          </div>
+          <div class="field">
+            <label class="field__label" for="q-tel">WhatsApp o teléfono</label>
+            <input class="field__input" id="q-tel" name="telefono" type="tel" inputmode="tel" autocomplete="tel" maxlength="20" aria-describedby="q-tel-err">
+            <p class="field__err" id="q-tel-err" hidden></p>
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label class="field__label" for="q-giro">Giro de tu negocio *</label>
+            <input class="field__input" id="q-giro" name="giro" type="text" maxlength="100" placeholder="Restaurante, consultorio, taller…" required aria-describedby="q-giro-err">
+            <p class="field__err" id="q-giro-err" hidden></p>
+          </div>
+          <div class="field">
+            <label class="field__label" for="q-servicio">¿Qué te interesa? *</label>
+            <select class="field__input field__input--select" id="q-servicio" name="servicio" required aria-describedby="q-servicio-err">
+              <option value="">Elige una opción</option>
+              <option value="pagina">Página web</option>
+              <option value="chatbot">Chatbot para WhatsApp</option>
+              <option value="ambos">Los dos servicios</option>
+              <option value="nose">Aún no lo sé</option>
+            </select>
+            <p class="field__err" id="q-servicio-err" hidden></p>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="field__label" for="q-mensaje">Cuéntanos qué necesitas *</label>
+          <textarea class="field__input field__input--area" id="q-mensaje" name="mensaje" rows="4" maxlength="1000" required aria-describedby="q-mensaje-err q-mensaje-count"></textarea>
+          <p class="field__count" id="q-mensaje-count" aria-live="off">0 / 1000</p>
+          <p class="field__err" id="q-mensaje-err" hidden></p>
+        </div>
+
+        <div class="hp" aria-hidden="true">
+          <label for="q-web">No llenes este campo</label>
+          <input id="q-web" name="referencia_interna" type="text" tabindex="-1" autocomplete="off">
+        </div>
+
+        <div class="check">
+          <input class="check__box" id="q-acepto" name="acepto" type="checkbox" required aria-describedby="q-acepto-err">
+          <label class="check__label" for="q-acepto">Acepto que JKJ SYSTEMS use estos datos para responder mi solicitud, según el <a href="aviso-de-privacidad.html">aviso de privacidad</a>. *</label>
+        </div>
+        <p class="field__err" id="q-acepto-err" hidden></p>
+
+        <button class="btn btn--primary btn--lg btn--block" type="submit">Enviar solicitud</button>
+        <p class="quote__status" id="q-status" role="status" aria-live="polite"></p>
+
+        <div class="quote__result" id="q-result" hidden>
+          <p class="quote__result-title" id="q-result-title"></p>
+          <pre class="quote__result-body" id="q-result-body" tabindex="0"></pre>
+          <button class="btn btn--ghost" id="q-copy" type="button">Copiar mensaje</button>
+        </div>
+        <noscript><p class="quote__hint">Para enviar este formulario activa JavaScript, o escríbenos por los medios de la izquierda.</p></noscript>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__in">
+    <strong class="footer__brand">JKJ SYSTEMS · Innovation Technologies</strong>
+    <span class="footer__meta"><a class="footer__link" href="aviso-de-privacidad.html">Aviso de privacidad</a><span>© <span id="year">2026</span> JKJ SYSTEMS</span></span>
+  </div>
+</footer>
+
+<div class="chat" id="chat">
+  <button class="chat__fab" id="chat-fab" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="chat-panel">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7a2.5 2.5 0 0 1-2.5 2.5H11l-4.5 4v-4A2.5 2.5 0 0 1 4 13.500z"></path><path d="M8.500 8.500h7M8.500 11.500h4.500"></path></svg>
+    <span class="sr-only">Abrir el asistente de JKJ SYSTEMS</span>
+  </button>
+</div>
+
+<script src="js/config.js" defer></script>
+<script src="js/background.js" defer></script>
+<script src="js/logo3d.js" defer></script>
+<script src="js/tilt.js" defer></script>
+<script src="js/form.js" defer></script>
+<script src="js/chatbot.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>

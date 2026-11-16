@@ -1,0 +1,17 @@
+# Copia este archivo como ".dev.vars" y llena los valores para probar en tu computadora.
+# ".dev.vars" está en .gitignore: nunca se sube al repositorio.
+# En producción, estos mismos nombres se capturan como secretos en la configuración del proyecto en Cloudflare Pages.
+
+# --- Formulario de cotización (functions/api/contact.js) ---
+RESEND_API_KEY=
+CONTACT_TO=
+CONTACT_FROM=
+
+# --- Asistente con IA (functions/api/chat.js) ---
+ANTHROPIC_API_KEY=
+# Opcionales
+CHAT_MODEL=
+CONTACT_EMAIL=
+CONTACT_INSTAGRAM=
+CONTACT_FACEBOOK=
+ALLOWED_ORIGIN=

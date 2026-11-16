@@ -1,0 +1,17 @@
+# Secretos y entorno: nunca subirlos al repositorio
+.env
+.env.*
+.dev.vars
+*.pem
+*.key
+
+# Dependencias y salidas
+node_modules/
+dist/
+.wrangler/
+.vercel/
+.netlify/
+
+# Sistema
+.DS_Store
+Thumbs.db
