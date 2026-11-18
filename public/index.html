@@ -345,6 +345,50 @@
     <span class="sr-only">Abrir el asistente de JKJ SYSTEMS</span>
   </button>
 </div>
+  <div id="cookie-banner" style="display:none;position:fixed;bottom:0;left:0;right:0;background:#111;color:#fff;padding:16px;z-index:9999;font:14px sans-serif;text-align:center">
+  Usamos cookies para mejorar tu experiencia y medir visitas.
+  <a href="/aviso-de-privacidad" style="color:#7cf">Aviso de privacidad</a>
+  <button id="cb-ok" style="margin-left:12px;padding:6px 14px">Aceptar</button>
+  <button id="cb-no" style="margin-left:6px;padding:6px 14px">Rechazar</button>
+</div>
+
+<script>
+function setCookie(n, v, dias) {
+  document.cookie = n + "=" + v + "; max-age=" + dias*86400 + "; path=/; Secure; SameSite=Lax";
+}
+function getCookie(n) {
+  return document.cookie.split("; ").find(c => c.startsWith(n + "="));
+}
+function cargarAnalytics() {
+  var s = document.createElement("script");
+  s.async = true;
+  s.src = "https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"; // tu ID de GA4
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag("js", new Date());
+  gtag("config", "G-XXXXXXXXXX");
+}
+
+var banner = document.getElementById("cookie-banner");
+var consentimiento = getCookie("consentimiento");
+
+if (!consentimiento) {
+  banner.style.display = "block";
+} else if (consentimiento === "consentimiento=si") {
+  cargarAnalytics();
+}
+
+document.getElementById("cb-ok").onclick = function () {
+  setCookie("consentimiento", "si", 180);
+  banner.style.display = "none";
+  cargarAnalytics();
+};
+document.getElementById("cb-no").onclick = function () {
+  setCookie("consentimiento", "no", 180);
+  banner.style.display = "none";
+};
+</script>
 
 <script src="js/config.js" defer></script>
 <script src="js/background.js" defer></script>
