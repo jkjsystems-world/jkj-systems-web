@@ -11,6 +11,6 @@ window.JKJ_CONFIG = {
   // Mientras el servidor no exista o no tenga sus llaves, el formulario no
   // envía (muestra el mensaje para copiar) y el asistente usa sus respuestas
   // guardadas. Deja la cadena vacía para no intentar la conexión.
-  formEndpoint: "/api/contact",
+ formEndpoint: "https://jkj-systems.app.n8n.cloud/webhook/cotizacion",
   chatEndpoint: "/api/chat"
 };
