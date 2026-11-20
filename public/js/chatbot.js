@@ -96,7 +96,7 @@
     var head = el("div", "chat__head");
     var titles = el("div");
     titles.appendChild(el("span", "chat__title", "Asistente JKJ"));
-    sub = el("span", "chat__sub", "Respuestas automáticas");
+    sub = el("span", "chat__sub", "Te ayudamos con tu cotización al instante.");
     titles.appendChild(sub);
     var close = el("button", "chat__close");
     close.type = "button";
