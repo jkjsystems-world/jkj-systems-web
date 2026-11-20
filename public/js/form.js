@@ -119,7 +119,8 @@
       body: JSON.stringify({
         nombre: d.nombre, negocio: d.giro, correo: d.correo, telefono: d.telefono,
         servicio: d.servicio, mensaje: d.mensaje, acepto: true,
-        sitio_web: honeypot, elapsed: Date.now() - loadedAt
+        sitio_web: honeypot, elapsed: Date.now() - loadedAt,
+        turnstile: captchaToken()
       }),
       credentials: "same-origin",
       referrerPolicy: "strict-origin-when-cross-origin",
@@ -149,6 +150,17 @@
     say("Tus datos están completos, pero aún no se enviaron.", "err");
   }
 
+  // Cloudflare Turnstile: el widget agrega un campo oculto con un token de un solo uso.
+  // El servidor (n8n) debe verificar ese token; aquí solo se envía.
+  function hasCaptcha() { return !!form.querySelector(".cf-turnstile"); }
+  function captchaToken() {
+    var el = form.querySelector('input[name="cf-turnstile-response"]');
+    return el && el.value ? String(el.value).slice(0, 2048) : "";
+  }
+  function resetCaptcha() {
+    try { if (window.turnstile && hasCaptcha()) window.turnstile.reset(form.querySelector(".cf-turnstile")); } catch (err) { /* sin widget */ }
+  }
+
   form.addEventListener("submit", function (e) {
     e.preventDefault();
     result.hidden = true;
@@ -160,6 +172,9 @@
     var data = read();
     var firstBad = validate(data);
     if (firstBad) { say("Revisa los campos marcados.", "err"); firstBad.focus(); return; }
+
+    // Verificación anti-bots (Cloudflare Turnstile), si el widget está en la página.
+    if (hasCaptcha() && !captchaToken()) { say("Completa la verificación de seguridad antes de enviar.", "err"); return; }
 
     var now = Date.now();
     if (now - loadedAt < MIN_FILL) { say("Un momento… intenta de nuevo en unos segundos.", "err"); return; }
@@ -173,11 +188,13 @@
     say("Enviando…");
     send(data, "").then(function () {
       lastSent = Date.now();
+      resetCaptcha();
       form.reset();
       tried = false;
       updateCount();
       say("Listo. Recibimos tu solicitud y te escribiremos pronto.", "ok");
     }, function (err) {
+      resetCaptcha();
       var kind = err && err.kind;
       if (kind === "offline") { demo(text); return; }
       if (kind === "invalid") {
