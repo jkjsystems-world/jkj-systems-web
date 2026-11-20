@@ -388,6 +388,24 @@ document.getElementById("cb-no").onclick = function () {
   setCookie("consentimiento", "no", 180);
   banner.style.display = "none";
 };
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+<script type="module">
+  import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+  createChat({
+    webhookUrl: 'https://jkj-systems.app.n8n.cloud/webhook/b44deb7e-afad-418d-aa3e-a399a9f09869/chat',
+    initialMessages: ['¡Hola! Soy SYSTEMS el asistente virtual.', '¿Tienes dudas sobre páginas web o chatbots para tu negocio?'],
+    i18n: {
+      en: {
+        title: 'JKJ Systems',
+        subtitle: 'Resolvemos tus dudas al momento',
+        footer: '',
+        getStarted: 'Nueva conversación',
+        inputPlaceholder: 'Escribe tu pregunta...',
+      },
+    },
+  });
+</script>
+
 </script>
 
 <script src="js/config.js" defer></script>
